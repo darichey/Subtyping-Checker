@@ -1,9 +1,9 @@
 % extends(C, P) is true if C is a direct subtype of P.
 % That is, it would be declared as "C extends P"
 
-extends(a, any).
-extends(b, any).
-extends(c, any).
+extends(b, a).
+extends(c, a).
+extends(d, c).
 
 % All types are subtypes of "any".
 subtype(_, any).
